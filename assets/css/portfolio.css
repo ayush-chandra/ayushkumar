@@ -724,7 +724,7 @@ welcome
   .welcome-area .header-text p {
     margin-bottom: 30px;
   }
-  .welcome-area:hover .header-text p strong{
+  .welcome-area .header-text p strong{
   color: #8261ee;
 }
 }
