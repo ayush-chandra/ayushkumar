@@ -1635,6 +1635,9 @@ preloader
 a#standard:hover{
    background-color: #8261ee; 
 }
+#knowme{
+  font-size: 15px;
+}
 
 @keyframes jumper {
   0% {
