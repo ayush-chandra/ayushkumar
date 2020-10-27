@@ -724,6 +724,9 @@ welcome
   .welcome-area .header-text p {
     margin-bottom: 30px;
   }
+  .welcome-area:hover .header-text p strong{
+  color: #8261ee;
+}
 }
 
 @media (max-width: 765px) {
@@ -754,6 +757,9 @@ welcome
     line-height: 22px;
     margin-bottom: 80px;
   }
+   .welcome-area .header-text h1 strong {
+    color: #ff589e;
+ } 
 }
 
 
