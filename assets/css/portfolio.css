@@ -1387,7 +1387,7 @@ blog
   color: #777;
   letter-spacing: 0.26px;
   line-height: 26px;
-  margin-bottom: 15%;
+  margin-bottom: 16px;
 }
 
 .blog-post-thumb .post-footer span {
@@ -1403,6 +1403,7 @@ blog
 .blog-post-thumb a.main-button  {
   margin-top: 10px;
   display: inline-block;
+  
 }
 
 .blog-list .blog-post-thumb {
