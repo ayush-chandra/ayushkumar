@@ -1387,7 +1387,7 @@ blog
   color: #777;
   letter-spacing: 0.26px;
   line-height: 26px;
-  margin-bottom: 15px;
+  margin-bottom: 15%;
 }
 
 .blog-post-thumb .post-footer span {
@@ -1409,7 +1409,11 @@ blog
   text-align: left;
 }
 
-
+@media (min-width: 601px) {
+.blog-post-thumb .text {
+  margin-bottom: 16px;
+}
+}
 /* 
 ---------------------------------------------
 contact
@@ -1612,6 +1616,11 @@ preloader
   display: none;
 }
 
+#center {
+  text-align: center;
+  margin:5% auto 5% auto;
+}
+
 .welcome-area .header-text p {
   line-height: 30px;
   }
@@ -1625,6 +1634,26 @@ preloader
 }
 }
 
+.typeform-share:hover{
+  background-color:#ff589e !important;
+}
+
+.section-title:hover{
+  color:#ff589e;
+}
+
+.create:hover{
+  color:#8261ee;
+}
+
+/*Resume and Portfolio Hover*/
+
+.download:hover{
+  color: #ff589e !important;
+  text-decoration: underline !important;
+}
+
+
 
 /*a.main-button-slider:hover {
   background-color: #8261ee;
@@ -1636,7 +1665,7 @@ a#standard:hover{
    background-color: #8261ee; 
 }
 #knowme{
-  font-size: 15px;
+  font-size: 15 px;
 }
 
 @keyframes jumper {
