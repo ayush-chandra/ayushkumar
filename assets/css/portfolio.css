@@ -945,8 +945,8 @@ parallax & home seperator
 }
 
 .mini .mini-content .mini-box:hover {
-  margin-top: -5px;
-  background: #ff589e;
+  margin-top: -1.5px;
+  background: rgba(250,88,158,1);
 }
 
 .mini .mini-content .mini-box:before {
@@ -1146,9 +1146,6 @@ team
   padding-bottom: 25px;
 }
 
-.team-item:hover .team-content .team-info {
-  margin-left: 30px;
-}
 
 .team-item i {
   display: block;
@@ -1183,10 +1180,6 @@ team
   float: left;
   margin-left: 20px;
   margin-top: 8px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
 }
 
 .team-item .team-content .team-info .user-name {
@@ -1668,6 +1661,57 @@ a#standard:hover{
 #knowme{
   font-size: 15 px;
 }
+
+
+.team-item:hover{
+  background: #8261ee;
+}
+
+#pink:hover{
+  background: #ff589e;
+}
+
+.team-item:hover .team-content p{
+  color: #ffffff;
+}
+
+
+/*Testimonails Hover*/
+
+.testi img:last-child {
+  display: none;  
+}
+.team-item:hover .testi img:last-child {
+  display: inline;
+/*  margin-left: -5px;  */
+}
+
+.team-item:hover .testi img:first-child {
+  display: none;  
+}
+
+/*Company Name on hover*/
+
+.team-item:hover .team-content .team-info span {
+  color: #ffffff;
+}
+
+
+.team-item:hover .team-content .team-info .user-name {
+  color: #ffffff;
+}
+
+
+/*Fix Services*/
+#services{
+  display: inline;
+}
+
+@media (max-width: 720px) {
+#p2,#p3{
+ display: none;
+}
+
 
 @keyframes jumper {
   0% {
