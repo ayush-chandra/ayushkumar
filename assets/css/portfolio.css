@@ -682,7 +682,7 @@ welcome
   color: #777;
   line-height: 28px;
   letter-spacing: 0.25px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   position: relative;
 }
 
@@ -1659,16 +1659,39 @@ a#standard:hover{
    background-color: #8261ee; 
 }
 #knowme{
-  font-size: 15 px;
+  font-size: 15px;
+  margin-top: 20px;
+  transition: all;
+  transition-duration: 0.5s;
+  transform: all;
 }
 
+#knowme:hover{
+  margin-top: -50px;
+}
+
+
+.team-item{
+  transition: all;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+}
 
 .team-item:hover{
   background: #8261ee;
+  margin-top: -5px;
 }
+
+
+#pink{
+  transition: all;
+  transition-duration: 0.5s;
+}
+
 
 #pink:hover{
   background: #ff589e;
+  margin-top: -5px;
 }
 
 .team-item:hover .team-content p{
