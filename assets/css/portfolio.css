@@ -691,8 +691,12 @@ welcome
   color: #777;
   line-height: 28px;
   letter-spacing: 0.25px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   position: relative;
+}
+
+#pdesk{
+  margin-bottom: 60px;
 }
 
 .welcome-area .header-text p strong{
@@ -773,8 +777,11 @@ welcome
 /*    color: #fff;*/
     font-size: 14px;
     line-height: 22px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
+#lotmore{
+      margin-bottom: 70px;
+}
    .welcome-area .header-text h1 strong {
     color: #ff589e;
  } 
@@ -1620,11 +1627,20 @@ preloader
 
 /*Lame paragraph fix*/
 
-#pc2{
+.pmob{
  display: block;
 }
-#pc{
+.pdesk{
   display: none;
+}
+
+@media (min-width: 600px) {
+.pmob{
+ display: none;
+}
+.pdesk{
+  display: block;
+}
 }
 
 #center {
@@ -1642,14 +1658,7 @@ preloader
   line-height: 30px;
   }
 
-@media (min-width: 600px) {
-#pc2{
- display: none;
-}
-#pc{
-  display: block;
-}
-}
+
 
 
 @media (min-width: 728px) {
