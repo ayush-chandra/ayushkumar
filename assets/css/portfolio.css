@@ -1782,13 +1782,13 @@ a#standard:hover{
 /*Hi there*/
 
 #hithere{
-  margin-bottom: 5px;
+  margin-bottom: 2.5px;
 }
 
 /*Only on Mobile*/
 @media (max-width: 720px) {
 #hithere{
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   margin-top: 20%;
 }
 }
@@ -1800,7 +1800,14 @@ a#standard:hover{
 }
 
 
-
+@media (max-width: 480px) {
+#lotmore{
+  display: none;
+}
+.welcome-area .header-text p{
+  margin-bottom: 80px;
+}
+}
 
 /*Fix Services*/
 #services{
