@@ -387,10 +387,33 @@ header
 }
 
 .header-area .main-nav {
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-  border-radius: 40px;
   min-height: 80px;
+  transition: all 0.5s;
+}
+
+.header-area:hover .main-nav {
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  border-radius: 40px;
   background: #fff;
+}
+
+
+/*Fix Services*/
+#services{
+  display: inline;
+}
+
+#services2{
+  display: none;
+}
+
+@media (max-width: 480px) {
+#services{
+  display: none;
+}
+#services2{
+  display: inline;
+}
 }
 
 .header-area .main-nav .logo {
@@ -1791,6 +1814,9 @@ a#standard:hover{
   margin-bottom: 1%;
   margin-top: 20%;
 }
+#center{
+  margin: 5% auto 10% auto;
+}
 }
 
 @media (max-width: 720px) {
@@ -1805,14 +1831,10 @@ a#standard:hover{
   display: none;
 }
 .welcome-area .header-text p{
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 }
 
-/*Fix Services*/
-#services{
-  display: inline;
-}
 
 
 /*Only on Mobile*/
