@@ -1856,7 +1856,7 @@ a#standard:hover{
 @media (max-width: 720px) {
 #hithere{
   margin-bottom: 1%;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 #center{
   margin: 5% auto 10% auto;
@@ -1875,7 +1875,7 @@ a#standard:hover{
   display: none;
 }
 .welcome-area .header-text p{
-  margin-bottom: 70px;
+  margin-bottom: 65px;
 }
 }
 
