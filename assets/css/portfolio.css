@@ -129,7 +129,7 @@ body {
 }
 
 .section.colored {
-  background: #f2f2fe;
+  background: #ffffff;
 }
 
 .hr {
@@ -402,6 +402,7 @@ header
 .main-nav {
   min-height: 80px;
   transition: all 0.5s;
+  background: #ffffff;
 }
 
 @media (min-width: 992px) {
@@ -413,6 +414,7 @@ header
 .main-nav:hover{
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
   border-radius: 50px;
+  background: #ffffff;
 }
 }
 
@@ -679,6 +681,29 @@ header
   }
 }
 
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  inset 0 0 6px rgba(0,0,0,.3);
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff589e; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff5882; 
+}
+
 /* 
 ---------------------------------------------
 welcome
@@ -694,8 +719,9 @@ welcome
   background-position: center center;
   background-size: cover; 
   height: 100vh;
-  transition: background 0.5s;
-  -moz-transition: background 0.5s;
+  transition: background 1s;
+  transition-delay: 0.5s;
+  -moz-transition: background 1s;
 }
 
 @media (min-width: 992px) {
@@ -719,8 +745,8 @@ welcome
 
 .welcome-area .header-text h1 {
   font-weight: 400;
-  font-size: 60px;
-  line-height: 80px;
+  font-size: 65px;
+  line-height: 95px;
   letter-spacing: 1.4px;
   margin-bottom: 30px;
   color: #8261ee !important;
@@ -738,7 +764,7 @@ welcome
 .welcome-area .header-text p {
   font-weight: 400;
   font-size: 15px;
-  color: #777;
+  color: #767676;
   line-height: 28px;
   letter-spacing: 0.25px;
   margin-bottom: 20px;
@@ -795,9 +821,9 @@ welcome
   .welcome-area .header-text p {
     margin-bottom: 30px;
   }
-  .welcome-area .header-text p strong{
+/*  .welcome-area .header-text p strong{
   color: #8261ee;
-}
+}*/
 }
 
 @media (max-width: 765px) {
@@ -839,7 +865,6 @@ welcome
 
 /*and svg*/
 .andsvg{
-  display: flex;
   width: 50px;
   height: 50px;
   margin: 1.5% auto;
@@ -860,14 +885,14 @@ features
 --------------------------------------------- 
 */
 .features-small-item {
-  cursor: pointer;
+  cursor: none;
   display: block;
   background: #FFFFFF;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  padding: 30px;
+  padding: 30px 70px;
   text-align: center;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -929,10 +954,12 @@ features
   z-index: 2;
 }
 
+/*mobile issue check*/
+
 .home-feature {
   padding-bottom: 0px;
   padding-top: 30px;
-  margin-top: -220px;
+  margin-top: -180px;
   z-index: 9;
 }
 
@@ -966,10 +993,15 @@ parallax & home seperator
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(../images/work-process-bg.png);
+  background: #8261ee;
   z-index: 2;
   top: -20%;
   left: -20%;
+  transition: background 1s;
+}
+
+.mini:hover::before {
+  background: #ff589e;
 }
 
 .mini .mini-content {
@@ -1033,6 +1065,7 @@ parallax & home seperator
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
   text-align: center;
+  cursor: none;
 }
 
 .mini .mini-content .mini-box:hover {
@@ -1091,14 +1124,26 @@ parallax & home seperator
   width: 140%;
   height: 140%;
   opacity: .90;
-  background-image: url(../images/fun-facts-bg.png);
+  background: #8261ee;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   z-index: 2;
   top: -20%;
   left: -20%;
+  transition: background 1s;
 }
+
+@media (max-width: 720px) {
+  .counter:before {
+    height: 100%;
+  }
+}
+
+.counter:hover::before {
+  background: #ff589e;
+}
+
 
 .counter .content {
   position: relative;
@@ -1122,7 +1167,7 @@ parallax & home seperator
   position: absolute;
   width: 70%;
   height: 32px;
-  top: 160px;
+  top: 140px;
   left: 70%;
   background: url(../images/circle-dec.png) center center no-repeat;
   -webkit-transition: all 0.3s ease 0s;
@@ -1161,7 +1206,7 @@ parallax & home seperator
   letter-spacing: 0.25px;
   margin-bottom: 10px;
   color: #fff;
-  margin-top: 120px;
+  margin-top: 100px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1273,6 +1318,9 @@ team
   color: #1e1e1e;
   letter-spacing: 0.25px;
   margin-bottom: 5px;
+  transition: color 0.3s;
+  transition-duration: 0.3s;
+  transition-delay: 0.15s;
 }
 
 .team-item .team-content .team-info span {
@@ -1281,6 +1329,8 @@ team
   font-size: 15px;
   color: #ff589e;
   letter-spacing: 0.25px;
+  transition: color 0.3s;
+  transition-delay: 0.15s;
 }
 
 .team-item .team-content p {
@@ -1293,6 +1343,8 @@ team
   color: #777;
   letter-spacing: 0.6px;
   line-height: 26px;
+  transition: all 0.3s;
+  transition-delay: 0.15s;
 }
 
 /* 
@@ -1409,7 +1461,7 @@ pricing
 }
 
 .pricing-item .pricing-body .list li.active {
-  color: #7a7a7a;
+  color: #767676;
   text-decoration: none;
 }
 
@@ -1467,7 +1519,7 @@ blog
 .blog-post-thumb .text {
   font-weight: 400;
   font-size: 13px;
-  color: #777;
+  color: #767676;
   letter-spacing: 0.26px;
   line-height: 26px;
   margin-bottom: 10px;
@@ -1600,10 +1652,9 @@ footer .copyright {
   padding-top: 30px;
   padding-bottom: 30px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
   letter-spacing: 0.88px;
-  text-transform: uppercase;
 }
 
 @media (max-width: 991px) {
@@ -1794,8 +1845,8 @@ a#standard:hover{
 
 .team-item{
   transition: all;
-  transition-duration: 0.5s;
-  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-delay: 0.15s;
 }
 
 .team-item:hover{
@@ -1804,15 +1855,8 @@ a#standard:hover{
 }
 
 
-#pink{
-  transition: all;
-  transition-duration: 0.5s;
-}
-
-
 #pink:hover{
   background: #ff589e;
-  margin-top: -5px;
 }
 
 .team-item:hover .team-content p{
@@ -1822,8 +1866,13 @@ a#standard:hover{
 
 /*Testimonails Hover*/
 
+.testi img{
+  transition: all 0.3s;
+  transition-delay: 0.15s;
+}
+
 .testi img:last-child {
-  display: none;  
+  display: none;
 }
 .team-item:hover .testi img:last-child {
   display: inline;
