@@ -129,7 +129,15 @@ body {
 }
 
 .section.colored {
-  background: #ffffff;
+  /*background-image: url(../images/sayhey.jpg);*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+}
+@media (min-width: 992px) {
+#contact-us {
+  background-image: url(../images/sayhey.jpg);
+}
 }
 
 .hr {
@@ -161,7 +169,7 @@ body {
 .center-heading .section-title {
   font-weight: 500;
   font-size: 28px;
-  color: #1e1e1e;
+  color: #333;
   letter-spacing: 1.75px;
   line-height: 38px;
   margin-bottom: 20px;
@@ -749,7 +757,7 @@ welcome
 
 .welcome-area .header-text h1 {
   font-weight: 400;
-  font-size: 65px;
+  font-size: 55px;
   line-height: 95px;
   letter-spacing: 1.4px;
   margin-bottom: 30px;
@@ -757,13 +765,31 @@ welcome
 }
 
 .welcome-area .header-text h1 strong {
-    color: #8261ee;
-    transition: color 0.5s;
- } 
+/*    color: #8261ee;
+    transition: color 0.5s;*/
+    font-size: 70px;
+  background: linear-gradient(-45deg, #ff589e, #8261ee, #ff589e, #8261ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: gradient 5s infinite linear;
+  background-size:300%;
+}
 
- .welcome-area .header-text:hover h1 strong {
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} 
+
+/* .welcome-area .header-text:hover h1 strong {
     color: #ff589e;
- } 
+ }*/ 
 
 .welcome-area .header-text p {
   font-weight: 400;
@@ -845,10 +871,14 @@ welcome
   }
   .welcome-area .header-text h1 {
     font-weight: 400;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 65px;
     margin-bottom: 30px !important;
   }
+    .welcome-area .header-text h1 strong {
+      font-size: 55px;
+    }
+
   .welcome-area .header-text h1 span {
     color: #fff;
   }
@@ -1155,8 +1185,20 @@ parallax & home seperator
   width: 100%;
 }
 
+@media (min-width: 991px) {
+.counter .content {
+  background: #8261ee;
+  transition: 1s background;
+}
+.counter .content:hover{
+  background: #ff589e;
+}
+
+}
+
+
 .counter .content .count-item {
-  height: 340px;
+  height: 300px;
   position: relative;
   float: left;
   width: 100%;
@@ -1198,9 +1240,7 @@ parallax & home seperator
   transition: all 0.3s ease 0s;
 }
 
-.counter .content .count-item:hover strong {
-  margin-top: 110px;
-}
+
 
 .counter .content .count-item strong {
   display: block;
@@ -1215,6 +1255,10 @@ parallax & home seperator
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.counter .content .count-item:hover strong {
+  margin-top: 80px;
 }
 
 .counter .content .count-item span {
@@ -1369,6 +1413,7 @@ pricing
 
 .pricing-item:hover {
   transform: scale(1.075);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.15);
 }
 
 .pricing-item.active .pricing-header {
@@ -1613,13 +1658,20 @@ footer
 --------------------------------------------- 
 */
 footer {
-  background: linear-gradient(-45deg, #a759d1, #8261ee, #a759d1, #8261ee);
+  /*background: linear-gradient(-45deg, #6a3093, #a044ff, #6a3093, #a044ff);*/
+  
   padding-top: 30px;
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  /*animation: gradient 15s ease infinite;*/
+  background: #1e1e1e;
+  /*transition: 2s background;*/
 }
 
-@keyframes gradient {
+/*footer:hover {
+  background: #ff589e;
+}*/
+
+/*@keyframes gradient {
   0% {
     background-position: 0% 50%;
   }
@@ -1629,7 +1681,7 @@ footer {
   100% {
     background-position: 0% 50%;
   }
-}
+}*/
 
 footer .social {
   overflow: hidden;
@@ -1643,8 +1695,8 @@ footer .social li {
 }
 
 footer .social li a {
-  color: #9d5bd9;
-   text-align: center;
+  color: #333;
+  text-align: center;
   background-color: #fff;
   width: 36px;
   height: 36px;
@@ -1810,8 +1862,9 @@ preloader
 
 .typeform-share{
   letter-spacing: -1px;
-  transition: all;
+  transition: background transform;
   transition-duration: 0.3s;
+  margin-bottom: 20px;
 }
 
 .typeform-share:hover{
@@ -1824,7 +1877,8 @@ preloader
   transform: scale(1.05);
 }
 
-.section-title:hover{
+.section-title{
+  color: #333333;
   transition: color 0.5s;
 }
 
@@ -1868,14 +1922,14 @@ a#standard:hover{
 
 
 .team-item{
-  transition: all;
+  transition: transform;
   transition-duration: 0.3s;
   /*transition-delay: 0.15s;*/
 }
 
 .team-item:hover{
 /*  background: #8261ee;*/
-  margin-top: -10px;
+  transform: scale(1.075);
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -1938,7 +1992,7 @@ a#standard:hover{
 
 @media (max-width: 720px) {
 #proj1,#proj2{
-  margin-top: 5%;
+  margin-top: 8%;
 }
 }
 
@@ -1981,6 +2035,7 @@ a#standard:hover{
 #aboutme:hover{
   text-decoration: underline;
   text-decoration-color: #ff589e;
+  font-weight: 550;
 }
 
 /*Knowme animation button*/
