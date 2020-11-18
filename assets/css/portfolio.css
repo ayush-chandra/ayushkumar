@@ -757,8 +757,8 @@ welcome
 
 .welcome-area .header-text h1 {
   font-weight: 400;
-  font-size: 55px;
-  line-height: 95px;
+  font-size: 50px;
+  line-height: 85px;
   letter-spacing: 1.4px;
   margin-bottom: 30px;
   color: #8261ee !important;
@@ -767,7 +767,8 @@ welcome
 .welcome-area .header-text h1 strong {
 /*    color: #8261ee;
     transition: color 0.5s;*/
-    font-size: 70px;
+  font-size: 70px;
+  line-height: 90px;
   background: linear-gradient(-45deg, #ff589e, #8261ee, #ff589e, #8261ee);
   background-clip: text;
   -webkit-background-clip: text;
@@ -1189,7 +1190,7 @@ parallax & home seperator
 
 @media (min-width: 991px) {
 .counter .content {
-  background: #8261ee;
+  background: #7e5dea;
   transition: 1s background;
 }
 .counter .content:hover{
@@ -1993,7 +1994,7 @@ a#standard:hover{
 /*Only on Mobile*/
 @media (max-width: 720px) {
 #hithere{
-  margin-bottom: 1%;
+  margin-bottom: 5%;
   margin-top: 15%;
 }
 #center{
