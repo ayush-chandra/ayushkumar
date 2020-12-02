@@ -452,7 +452,7 @@ button.main-button:hover {
   background-color: #ff589e;
 }
 
-/*Nav Ba Mobiler*/
+/*Nav Bar Mobile*/
 @media (max-width: 719px) {
   .main-nav {
     background: #ffffff;
@@ -965,21 +965,6 @@ welcome
   }
 }
 
-/*and svg*/
-.andsvg {
-  width: 50px;
-  height: 50px;
-  margin: 1.5% auto;
-}
-
-@media (max-width: 765px) {
-  .andsvg {
-    width: 30px;
-    height: 30px;
-    margin: 1.5% auto;
-  }
-}
-
 /* 
 ---------------------------------------------
 features
@@ -1465,14 +1450,23 @@ team
   margin-top: 25px;
   padding-left: 25px;
   padding-right: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 15px;
   color: #707070;
   letter-spacing: 0.6px;
-  line-height: 26px;
+  line-height: 30px;
   transition: all 0.3s;
   transition-delay: 0.15s;
+}
+
+@media (max-width: 480px) {
+  .team-item .team-content p {
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
 }
 
 /* 
@@ -1988,7 +1982,7 @@ a#standard:hover {
  color: #ffffff;
 } */
 
-/*Testimonails Hover*/
+/*Testimonials Hover*/
 
 /*.testi img{
   transition: all 0.3s;
