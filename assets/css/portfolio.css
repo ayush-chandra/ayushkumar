@@ -204,7 +204,7 @@ body {
 }
 @media (min-width: 992px) {
   #contact-us {
-    background-image: url(../images/sayhey.jpg);
+    background-image: url(../images/backgrounds/sayhey.webp);
   }
 }
 
@@ -810,7 +810,7 @@ welcome
 
 @media (min-width: 992px) {
   .welcome-area {
-    background-image: url(../images/home-banner.jpg);
+    background-image: url(../images/backgrounds/home-banner.webp);
   }
 }
 
