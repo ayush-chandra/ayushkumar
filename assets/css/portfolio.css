@@ -904,7 +904,7 @@ welcome
 }
 
 .welcome-area .header-text p:hover strong {
-  color: #8261ee;
+  color: #ff589e;
 }
 
 @media (max-width: 991px) {
@@ -2030,15 +2030,16 @@ a#standard:hover {
 #download {
   font-size: 16px;
   margin-bottom: 25px;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 #aboutme {
   margin-top: 80px;
+  transition: transform 0.3s;
 }
 
-#aboutme a:hover {
-  font-weight: 500;
+#aboutme:hover {
+  transform: scale(1.1);
 }
 
 .contact-me {
@@ -2072,6 +2073,7 @@ a#standard:hover {
 }
 
 .chat-blob {
+  z-index: 100000;
   transition: transform 0.3s;
 }
 .chat-blob:hover {

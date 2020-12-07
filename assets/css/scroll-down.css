@@ -1,7 +1,7 @@
 #section10 {
   position: relative;
-  width: 80%;
-  height: 35%;
+  width: 82%;
+  height: 33%;
 }
 #section10::after {
   position: absolute;
@@ -34,10 +34,10 @@
 }
 #section10 a span {
   position: absolute;
-  top: -10px;
+  top: -11px;
   left: 50%;
-  width: 25px;
-  height: 40px;
+  width: 20px;
+  height: 31px;
   margin-left: -15px;
   border: 2px solid #8261ee;
   border-radius: 50px;
@@ -46,10 +46,10 @@
 #section10 a span::before {
   position: absolute;
   top: 10px;
-  left: 55%;
+  left: 60%;
   content: '';
-  width: 4px;
-  height: 6px;
+  width: 3px;
+  height: 5px;
   margin-left: -3px;
   background-color: #8261ee;
   border-radius: 40%;
@@ -66,7 +66,7 @@
     opacity: 1;
   }
   80% {
-    -webkit-transform: translate(0, 13px);
+    -webkit-transform: translate(0, 8px);
     opacity: 0;
   }
   100% {
@@ -82,7 +82,7 @@
     opacity: 1;
   }
   80% {
-    transform: translate(0, 13px);
+    transform: translate(0, 8px);
     opacity: 0;
   }
   100% {
