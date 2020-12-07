@@ -827,14 +827,6 @@ button.main-button:hover {
   .home-feature {
     padding-bottom: 0;
     padding-top: 0;
-    margin-top: -60px;
-  }
-}
-
-@media (max-width: 767px) {
-  .home-feature {
-    padding-bottom: 0;
-    padding-top: 0;
   }
 }
 
