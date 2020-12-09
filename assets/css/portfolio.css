@@ -923,7 +923,7 @@ button.main-button:hover {
 }
 
 .mini .mini-content .mini-box:hover {
-  margin-top: -10px;
+  transform: translateY(-10px);
 }
 
 .mini .mini-content .mini-box:before {
@@ -953,6 +953,7 @@ button.main-button:hover {
   font-size: 14px;
   color: #767676;
   letter-spacing: 0.75px;
+  line-height: 27px;
 }
 
 .mini .mini-content .mini-box strong {
@@ -963,6 +964,7 @@ button.main-button:hover {
   letter-spacing: 0.25px;
   margin-bottom: 5px;
   margin-top: 20px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .counter {
@@ -1068,10 +1070,11 @@ button.main-button:hover {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .counter .content .count-item:hover strong {
-  margin-top: 80px;
+  transform: translateY(-20px);
 }
 
 .counter .content .count-item span {
@@ -1297,6 +1300,7 @@ button.main-button:hover {
   font-weight: 500;
   font-size: 28px;
   color: #fff;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .pricing-item .pricing-body .price-wrapper .period {
