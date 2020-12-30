@@ -224,7 +224,7 @@ a.main-button {
   background-color: #8261ee;
   text-transform: uppercase;
   color: #fff;
-  letter-spacing: 0.25px;
+  letter-spacing: 0.5px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1076,6 +1076,18 @@ button.main-button:hover {
 .counter .content .count-item:hover strong {
   transform: translateY(-20px);
 }
+.counter .content .count-item span
+ {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.counter .content .count-item:hover span{
+  transform: translateY(-20px);
+}
+
+
 
 .counter .content .count-item span {
   display: block;
@@ -1372,7 +1384,7 @@ button.main-button:hover {
   font-weight: 400;
   font-size: 13px;
   color: #767676;
-  letter-spacing: 0.26px;
+  letter-spacing: 0.5px;
   line-height: 26px;
   margin-bottom: 10px;
 }
