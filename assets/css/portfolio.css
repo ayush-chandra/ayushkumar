@@ -124,7 +124,7 @@ html {
   font-weight: 500;
   font-size: 28px;
   color: #333;
-  letter-spacing: 1.75px;
+  letter-spacing: 1px;
   line-height: 38px;
   margin-bottom: 20px;
 }
@@ -140,7 +140,7 @@ html {
   color: #767676;
   line-height: 30px;
   letter-spacing: 1px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .center-text.colored {
@@ -198,13 +198,13 @@ html {
 
 a.main-button-slider {
   display: inline-block;
-  font-size: 14px;
-  border-radius: 5px;
-  padding: 15px 30px;
+  font-size: 15px;
+  border-radius: 14px;
+  padding: 17px 32px;
   background-color: #ff589e;
   color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
   box-shadow: 0 20px 60px rgba(255, 88, 158, 0.25);
   -webkit-transition: all 0.2s ease 0s;
   -moz-transition: all 0.2s ease 0s;
@@ -218,11 +218,10 @@ a.main-button-slider:hover {
 }
 
 a.main-button {
-  font-size: 13px;
-  border-radius: 5px;
-  padding: 12px 20px;
+  font-size: 12px;
+  border-radius: 9px;
+  padding: 14px 22px;
   background-color: #8261ee;
-  text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.5px;
   -webkit-transition: all 0.3s ease 0s;
@@ -247,7 +246,6 @@ button.main-button {
   border-radius: 8px;
   padding: 12px 20px;
   background-color: #8261ee;
-  text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
@@ -630,9 +628,9 @@ button.main-button:hover {
 }
 
 .welcome-area .header-text h1 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 40px;
-  line-height: 70px;
+  line-height: 72px;
   letter-spacing: 1.4px;
   margin-bottom: 20px;
   color: #8261ee !important;
@@ -640,7 +638,7 @@ button.main-button:hover {
 }
 
 .welcome-area .header-text h1 strong {
-  font-size: 60px;
+  font-size: 50px;
   background: linear-gradient(-45deg, #ff589e, #8261ee, #ff589e, #8261ee);
   background-clip: text;
   -webkit-background-clip: text;
@@ -663,7 +661,7 @@ button.main-button:hover {
 }
 
 .welcome-area .header-text p {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 15px;
   color: #757575;
   line-height: 28px;
@@ -678,6 +676,7 @@ button.main-button:hover {
 
 .welcome-area .header-text p strong {
   transition: color 0.5s;
+  letter-spacing: 0.55px;
 }
 
 .welcome-area .header-text p:hover strong {
@@ -720,12 +719,12 @@ button.main-button:hover {
   }
   .welcome-area .header-text h1 {
     font-weight: 400;
-    font-size: 40px;
-    line-height: 65px;
+    font-size: 36px;
+    line-height: 60px;
     margin-bottom: 30px;
   }
   .welcome-area .header-text h1 strong {
-    font-size: 50px;
+    font-size: 46px;
   }
   .welcome-area .header-text p {
     font-size: 14px;
@@ -740,7 +739,7 @@ button.main-button:hover {
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 30px 50px;
   text-align: center;
   -webkit-transition: all 0.3s ease 0s;
@@ -765,7 +764,7 @@ button.main-button:hover {
 }
 
 .features-small-item:hover .icon {
-  background-color: #ff589e;
+  background-color: #fafafa;
 }
 
 .features-small-item .icon {
@@ -773,13 +772,13 @@ button.main-button:hover {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   line-height: 90px;
   margin: auto;
   position: relative;
-  margin-bottom: 30px;
-  background: #8261ee;
+  margin-bottom: 20px;
+  background: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -888,7 +887,7 @@ button.main-button:hover {
   color: #fff;
   font-weight: 500;
   font-size: 28px;
-  letter-spacing: 0.25px;
+  letter-spacing: 1px;
   margin-bottom: 30px;
 }
 
@@ -909,7 +908,7 @@ button.main-button:hover {
 .mini .mini-content .mini-box {
   display: block;
   background: #fff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 20px;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   margin-bottom: 30px;
@@ -954,6 +953,7 @@ button.main-button:hover {
   color: #767676;
   letter-spacing: 0.75px;
   line-height: 27px;
+  margin-bottom: 10px;
 }
 
 .mini .mini-content .mini-box strong {
@@ -1076,18 +1076,15 @@ button.main-button:hover {
 .counter .content .count-item:hover strong {
   transform: translateY(-20px);
 }
-.counter .content .count-item span
- {
+.counter .content .count-item span {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
-.counter .content .count-item:hover span{
+.counter .content .count-item:hover span {
   transform: translateY(-20px);
 }
-
-
 
 .counter .content .count-item span {
   display: block;
@@ -1095,7 +1092,7 @@ button.main-button:hover {
   color: #fff;
   font-weight: 500;
   font-size: 17px;
-  letter-spacing: 0.25px;
+  letter-spacing: 1.25px;
 }
 
 @media (max-width: 991px) {
@@ -1273,7 +1270,7 @@ button.main-button:hover {
 .pricing-item .pricing-header .pricing-title {
   font-weight: 500;
   font-size: 17px;
-  letter-spacing: 0.25px;
+  letter-spacing: 1px;
   color: #1e1e1e;
   width: 180px;
   height: 40px;
@@ -1368,7 +1365,7 @@ button.main-button:hover {
   font-weight: 500;
   font-size: 18px;
   color: #1e1e1e;
-  letter-spacing: 0.25px;
+  letter-spacing: 0.5px;
   line-height: 26px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -1691,12 +1688,9 @@ a#standard:hover {
 }
 
 #aboutme {
-  margin-top: 80px;
+  margin-top: 50px;
   transition: transform 0.3s;
-}
-
-#aboutme:hover {
-  transform: scale(1.1);
+  margin-bottom: 0px;
 }
 
 .contact-me {
@@ -1704,11 +1698,11 @@ a#standard:hover {
   letter-spacing: 1.4px;
   transition: all;
   transition-duration: 0.25s;
-  padding: 15px 8px;
+  padding: 18px 8px;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   width: 230px;
-  height: 60px;
+  height: 64px;
   display: inline-block;
   background: #ff589e;
   color: #fff;
@@ -1739,11 +1733,11 @@ a#standard:hover {
 }
 
 #aboutme a i {
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
 
-#aboutme a:hover i {
-  transform: translateX(15px);
+#aboutme:hover i {
+  transform: translateX(10px);
 }
 
 #amaze {
@@ -1753,4 +1747,41 @@ a#standard:hover {
 
 #amaze:hover {
   color: #8261ee;
+}
+@media (min-width: 991px) {
+  .project-card {
+    max-width: 30%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 25px;
+    transition: all 300ms;
+  }
+  .project-card:hover {
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+  }
+  .div-zoom {
+    overflow: none;
+  }
+  .zoom {
+    transition: transform 2.5s linear;
+  }
+  .project-card:hover .zoom {
+    transform: scale(1.2);
+  }
+  .services {
+    max-width: 32%;
+    margin: 0 auto;
+  }
+  .features-small-item {
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.05);
+    transition: all 400ms ease-in-out;
+  }
+  .features-small-item:hover {
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+html {
+  overflow-x: initial !important;
 }
