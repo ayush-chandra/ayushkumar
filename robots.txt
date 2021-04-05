@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block images from google images
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /assets/images
+
+Sitemap: https://www.ayushkumar.me/
