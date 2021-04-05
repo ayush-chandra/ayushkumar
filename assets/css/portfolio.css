@@ -2156,11 +2156,17 @@ h2 {
   background-image: url(../images/backgrounds/about.jpg) !important;
 }
 .mentorshipbg {
-  background-image: url(../images/backgrounds/30.png) !important;
+  background-image: url(../images/backgrounds/mentorshipbg.webp) !important;
 }
 .greybg {
   background-color: #fbfbfb;
 }
 .faq-mentoring {
   margin-top: 8rem;
+}
+html {
+  overflow-x: initial !important;
+}
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
